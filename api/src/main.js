@@ -50,6 +50,7 @@ app.post('/login', (req, res) => {
   })
 })
 
+// Register endpoint
 app.post('/register', (req, res) => {
   const user = {
     Username: req.body.name,
