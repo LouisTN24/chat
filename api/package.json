@@ -1,0 +1,37 @@
+{
+  "name": "api-skeleton",
+  "version": "1.0.0",
+  "description": "API Skeleton.",
+  "main": "dist/build.js",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack --progress --watch --display=none",
+    "build": "cross-env NODE_ENV=production webpack --progress --display=none && node ."
+  },
+  "author": "Louis Needs <louistn24@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.13.3",
+    "karma": "^2.0.2",
+    "lodash": "^4.17.4",
+    "mocha": "^5.1.1",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "cross-env": "^5.0.5",
+    "dotenv": "^5.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "nodemon-webpack-plugin": "^0.1.6",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

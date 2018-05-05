@@ -1,0 +1,148 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>    
+  <!--- Header -->     
+  <div class="header">
+    <a href="#" onclick="showModal('#login-modal');">Login</a>
+    <a href=home.html>
+      <img src='logo.png' alt='Apple logo' class="logo">
+    </a>
+    <a href="#" onclick="showModal('#register-modal');">Register</a>
+  </div>
+
+  <div class="banner">
+    <div class="imagebanner">
+      <img class="mySlides" src="astonlogo.png"  class='cars'> 
+      <img class="mySlides" src="vwlogo.png"  class='cars'>
+      <img class="mySlides" src="bmwlogo.png"  class='cars'>
+      <img class="mySlides" src="ducattilogo.jpg" class='cars'>
+      <img class="mySlides" src="mitslogo.png"  class='cars'>
+      <img class="mySlides" src="sublogo.jpg"  class='cars'>
+      <img class="mySlides" src="lambologo.png"  class='cars'>
+      <img class="mySlides" src="ferlogo.png"  class='cars'>
+      <img class="mySlides" src="klogo.png"  class='cars'>
+    </div> 
+  </div>
+
+  <!-- CONTENTS --> 
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 tile">
+          <img src='astonlogo.png' alt='Android' class='cars'>
+          <br>Aston Martin
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='vwlogo.png' alt='Android' class='cars'>
+          <br>Volkswagen
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='bmwlogo.png' alt='Android' class='cars'>
+          <br>BMW
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='ducattilogo.jpg' alt='Android' class='cars'>
+          <br>Ducati
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='mitslogo.png' alt='Android' class='cars'>
+          <br>Mitsubishi
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='sublogo.jpg' alt='Android' class='cars'>
+          <br>Subaru
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='lambologo.png' alt='Android' class='cars'>
+          <br>Lamborghini
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='ferlogo.png' alt='Android' class='cars'>
+          <br>Ferrari
+        </div>
+
+        <div class="col-md-4 tile">
+          <img src='klogo.png' alt='Android' class='cars'>
+          <br>Kawasaki
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="road">
+    <img src='road.png' alt='Android' class='pic'>
+  </div>
+
+  <div class='chat'>
+    <br><br>
+    <div id="wrapper">
+      <div id="menu">
+        <p class="welcome">Welcome, <b class="user-name"></b></p>
+        <p class="logout"><a id="exit" href="#">Close Chat</a></p>
+        <div style="clear:both"></div>
+      </div>
+
+      <ul id="messages"></ul>
+
+      <form id="chat">
+        <input id="chat-message" type="text" size="63" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="login-modal" class="popup"> 
+    <img src="user1.png" class="user">
+    <br><br>
+    <form id="login">
+      <center>Email:</center>
+      <center><input id="login-email" size="33" placeholder="John123@example.com"></center>
+      <br><br>
+      <center>Password:</center>
+      <center><input id="login-password" type="password" size="33" placeholder="●●●●●●●●●"> </center>
+      <br><br>
+      <center><button type="submit">Login</button></center>
+      <br>
+      <center><a href="#" onclick="hideModal('#login-modal');">Close</a></center> 
+    </form>
+    <br/>
+  </div>  
+
+  <div id="register-modal" class="popup"> 
+    <img src="user1.png" class="user">
+    <br><br>
+    <form id="register">
+      <center>Email:</center>
+      <center><input id="register-email" size="33" placeholder="John123@example.com"></center>
+      <br><br>
+      <center>Username:</center>
+      <center><input id="register-name" size="33" placeholder="John123"></center>
+      <br><br>
+      <center>Password:</center>
+      <center><input id="register-password" type="password" size="33" placeholder="●●●●●●●●●"> </center>
+      <br><br>
+      <center><button type="submit">Register</button></center>
+      <br>
+      <center><a href="#" onclick="hideModal('#register-modal');">Close</a></center> 
+    </form>
+    <br/>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="gateway.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+</body>
+</html>
