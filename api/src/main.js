@@ -34,6 +34,7 @@ app.get('/', (req, res) => {
   res.send('Hello')
 })
 
+// Login endpoint
 app.post('/login', (req, res) => {
   const email = req.body.email
   const password = req.body.password
